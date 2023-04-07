@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 RUN apt update
-RUN apt install default-jdk
+RUN apt install default-jdk -y
 RUN apt install maven tomcat9 git -y
 EXPOSE 8080
 #CMD ["/usr/share/tomcat9/bin/catalina.sh", "run"]
