@@ -7,3 +7,4 @@ RUN cd boxfuse-sample-java-war-hello/
 RUN cp /boxfuse-sample-java-war-hello/pom.xml /
 RUN mvn package
 RUN cp target/*.war /var/lib/tomcat9/webapps/
+CMD ["catalina.sh", "run"]
