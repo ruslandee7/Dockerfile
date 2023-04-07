@@ -7,4 +7,4 @@ RUN cp /boxfuse-sample-java-war-hello/pom.xml /
 RUN mvn package
 RUN cp target/*.war /var/lib/tomcat9/webapps/
 EXPOSE 8080
-CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+CMD ["/usr/share/tomcat9/bin/catalina.sh", "run"]
