@@ -9,4 +9,4 @@ ADD pom.xml boxfuse-sample-java-war-hello/
 ADD pom.xml /usr/local/tomcat
 RUN cd boxfuse-sample-java-war-hello/
 RUN mvn package
-RUN cp target/*.war /webapps/
+RUN cp target/*.war /usr/local/tomcat/webapps/
