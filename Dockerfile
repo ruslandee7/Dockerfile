@@ -1,6 +1,6 @@
-FROM tomcat:9.0
+FROM tomcat:8.0
 RUN apt update
-RUN apt install default-jdk -y
+#RUN apt install default-jdk -y
 RUN apt install maven git -y
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
