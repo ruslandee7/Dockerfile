@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:9.0
 RUN apt update
 #RUN apt install default-jdk -y
 RUN apt install maven git -y
