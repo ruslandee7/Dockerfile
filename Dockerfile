@@ -1,7 +1,7 @@
 FROM tomcat:9.0.73-jdk8-corretto
-RUN apt update
+RUN yum update
 #RUN apt install default-jdk -y
-RUN apt install maven git -y
+RUN yum install maven git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 ADD pom.xml boxfuse-sample-java-war-hello/
 #ADD pom.xml /usr/local/tomcat
